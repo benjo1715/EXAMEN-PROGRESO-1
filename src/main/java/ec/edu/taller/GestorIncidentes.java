@@ -12,7 +12,7 @@ public class GestorIncidentes {
 
     public GestorIncidentes(int capacidadMaxima) {
 
-        GestorIncidentes gestor=new GestorIncidentes("5");
+        GestorIncidentes gestor=new GestorIncidentes(5);
 
         this.colaIncidentes = null;
     }
@@ -21,14 +21,17 @@ public class GestorIncidentes {
         // TODO: implementar validaciones y registro en cola
         if (incidente==null)
             return false;
-        if()
+
+
         return true;
     }
+
 
     public boolean existeIncidente(String codigo) {
         // TODO: verificar si existe un incidente por código
         if(codigo==null || codigo=="")
             return false;
+        if (codigo)
         return false;
     }
 
