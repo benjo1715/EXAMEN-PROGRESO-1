@@ -12,16 +12,23 @@ public class GestorIncidentes {
 
     public GestorIncidentes(int capacidadMaxima) {
 
+        GestorIncidentes gestor=new GestorIncidentes("5");
+
         this.colaIncidentes = null;
     }
 
     public boolean registrarIncidente(IncidenteSeguridad incidente) {
         // TODO: implementar validaciones y registro en cola
-        return false;
+        if (incidente==null)
+            return false;
+
+        return true;
     }
 
     public boolean existeIncidente(String codigo) {
         // TODO: verificar si existe un incidente por código
+        if(codigo==null || codigo=="")
+            return false;
         return false;
     }
 
@@ -32,6 +39,7 @@ public class GestorIncidentes {
 
     public IncidenteSeguridad atenderSiguienteIncidente() {
         // TODO: eliminar el primero de la cola y cambiar estado a ATENDIDO
+
         return null;
     }
 
@@ -50,3 +58,4 @@ public class GestorIncidentes {
         return new ArrayList<>();
     }
 }
+
