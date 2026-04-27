@@ -21,7 +21,7 @@ public class GestorIncidentes {
         // TODO: implementar validaciones y registro en cola
         if (incidente==null)
             return false;
-
+        if()
         return true;
     }
 
